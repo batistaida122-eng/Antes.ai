@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; line-height: 1.6; }
+        h1 { color: #2c3e50; }
+        textarea, input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        button { width: 100%; padding: 15px; background-color: #27ae60; color: white; border: none; border-radius: 5px; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <h1>ABNT-AI</h1>
+    <p>Seu assistente de formatação acadêmica.</p>
+    
+    <label>Ou envie seu arquivo (.txt):</label>
+    <input type="file" id="fileInput" accept=".txt">
+    
+    <textarea id="inputTexto" rows="10" placeholder="Ou cole seu texto aqui..."></textarea>
+    <button onclick="processarTexto()">Corrigir e Formatar</button>
+    
+    <h3>Resultado:</h3>
+    <div id="resultado" style="background: #f4f4f4; padding: 15px; border-radius: 5px;"></div>
+
+    <script>
+        function processarTexto() {
+            let texto = document.getElementById("inputTexto").value;
+            // Aqui entra a sua lógica que validamos no Colab
+            document.getElementById("resultado").innerText = "Simulando correção: " + texto.substring(0, 50) + "...";
+        }
+    </script>
+</body>
+</html>
